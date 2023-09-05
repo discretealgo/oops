@@ -1,0 +1,31 @@
+class box
+{
+	double width;
+	double height;
+	double depth;
+	void cal(){
+		System.out.println("vol is"+width*height*depth);
+	}
+}
+class boxx{
+	
+	public static void main(String args[]){
+		//double volume;
+		box recbox = new box();
+		recbox.width =  10;
+		recbox.height = 15;
+		recbox.depth = 	20;
+		box cube = new box();
+		cube.width = cube.height = cube.depth = 10;
+		//System.out.println("volumme ofthe box is "));
+		double rv = recbox.cal();
+		double cubev = cube.cal();
+		if(rv<cubev){
+			System.out.println("Cube is  greater");
+		}
+		else{
+			System.out.println("Rec  is greater");
+		}
+
+}		
+}
